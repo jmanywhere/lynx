@@ -3,4 +3,12 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+remappings=[
+  "ds-test/=/Users/jmf/dev/lynx/lib/forge-std/lib/ds-test/src/",
+      "erc4626-tests/=/Users/jmf/dev/lynx/lib/openzeppelin-contracts/lib/erc4626-tests/",
+      "forge-std/=/Users/jmf/dev/lynx/lib/forge-std/src/",
+      "openzeppelin-contracts/=/Users/jmf/dev/lynx/lib/openzeppelin-contracts/",
+      "openzeppelin/=/Users/jmf/dev/lynx/lib/openzeppelin-contracts/contracts/",
+]
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
