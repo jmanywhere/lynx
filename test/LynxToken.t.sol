@@ -263,4 +263,23 @@ contract TestLynxToken is Test {
         snapBalance = token.getUserSnapshotAt(user1, 1);
         assertEq(snapBalance, 999 ether);
     }
+
+    function test_snapshotTaking_interval() public {
+        token.enableTrading();
+        token.transfer(user1, 50_000 ether);
+        // USER1 is part of tier1 in snapshot 0
+        token.takeSnapshot();
+
+        // USER1 is part of tier1 in snapshot 1
+        token.takeSnapshot();
+
+        token.transfer(user1, 10_000 ether);
+        // user1 is part of tier1 in snapshot 2
+        // token.takeSnapshot();
+
+        assertEq(token.getUserSnapshotAt(user1, 0), 50_000 ether);
+        console.log("Shit hits the fan");
+        assertEq(token.getUserSnapshotAt(user1, 1), 50_000 ether);
+        // assertEq(token.getUserSnapshotAt(user1, 2), 60_000 ether);
+    }
 }

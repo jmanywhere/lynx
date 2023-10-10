@@ -410,4 +410,43 @@ contract ProfitSharingTest is Test {
             assertLt(expectedReward - diffBalance, 1 gwei);
         else assertLt(diffBalance - expectedReward, 1 gwei);
     }
+
+    function test_reclaimRewards() public limitedDump {
+        vm.startPrank(owner);
+        profitSharing.createSnapshot{value: 1 ether}(
+            holdersLimited,
+            balancesLimited,
+            0,
+            0
+        );
+
+        skip(5 days);
+
+        vm.expectRevert(LynxPS__InvalidReclaim.selector);
+        profitSharing.removeUnclaimedRewards(0);
+
+        profitSharing.createSnapshot{value: 1 ether}(
+            holdersLimited,
+            balancesLimited,
+            0,
+            0
+        );
+        skip(25 days);
+        profitSharing.removeUnclaimedRewards(0);
+
+        assertLt(address(profitSharing).balance, 1.0000001 ether);
+
+        vm.stopPrank();
+
+        uint[] memory ids = new uint[](1);
+        uint[] memory qualifyingIndex = new uint[](1);
+        uint[] memory verificationIndex = new uint[](1);
+
+        ids[0] = 0;
+        qualifyingIndex[0] = 0;
+        verificationIndex[0] = 0;
+        vm.prank(holdersLimited[0]);
+        vm.expectRevert(LynxPS__AlreadyClaimedOrInvalidSnapshotClaim.selector);
+        profitSharing.claimDivs(ids, qualifyingIndex, verificationIndex);
+    }
 }
