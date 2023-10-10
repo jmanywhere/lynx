@@ -9,6 +9,8 @@ out/
 
 # Docs
 docs/
-
+holderdata/outputs
+holderdata/**/*.json
+holderdata/*.csv
 # Dotenv file
 .env
