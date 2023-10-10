@@ -14,6 +14,7 @@ error LynxPS__AlreadyClaimedOrInvalidSnapshotClaim();
 error LynxPS__ETHTransferFailed();
 error LynxPS__VerificationTierFailure(uint snapId, uint tierQ, uint tierV);
 error LynxPS__InvalidReclaim();
+error LynxPS__InvalidTierDistribution();
 
 contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
     //------------------------
@@ -57,6 +58,7 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
     event ExcludeAddress(address indexed user);
     event ExcludeMultipleAddresses(address[] indexed users);
     event ReclaimDivs(uint indexed snapId, uint128 amount);
+    event TierDistributionChanged(uint128 t1, uint128 t2);
 
     //------------------------
     //  Constructor
@@ -238,6 +240,20 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
         }
     }
 
+    /**
+     * @notice Sets the tier distribution
+     * @param _t1 new Tier 1 distribution amount
+     * @param _t2 new tier 2 distribution amount
+     */
+    function setTierDistribution(uint _t1, uint _t2) external onlyOwner {
+        tier1 = uint128(_t1);
+        tier2 = uint128(_t2);
+        totalTiers = uint128(_t1 + _t2);
+
+        if (totalTiers == 0) revert LynxPS__InvalidTierDistribution();
+        emit TierDistributionChanged(tier1, tier2);
+    }
+
     //------------------------
     //  Private Functions
     //------------------------
@@ -335,21 +351,36 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
     /**
      * @notice Returns all snapshots and the user's index in each snapshot
      * @param user User to check
-     * @return ids This is an array of length of all snapshots, the value is the index of the user in the snapshot, while the index is the snapshot ID
+     * @return qualfierIndexes This is an array of length of all snapshots, the value is the index of the user in the snapshot, while the index is the snapshot ID
+     * @return verificationIndexes This is an array of length of all snapshots, the value is the index of the user in the snapshot, while the index is the snapshot ID for the verication
+     * @return balances this is the array of user balances per each snapshot
      * @return claimable If the index is already claimed
      * @dev THIS FUNCTION IS ONLY MEANT TO BE CALLED IN THE FRONTEND DUE TO THE EXTREME GAS USAGE IF USED IN CONTRACT
      * @dev if the user is NOT found in snapshot, the value at the index will be type(uint).max
      */
     function getAllUserParticipatingSnapshots(
         address user
-    ) external view returns (uint[] memory ids, bool[] memory claimable) {
+    )
+        external
+        view
+        returns (
+            uint[] memory qualfierIndexes,
+            uint[] memory verificationIndexes,
+            uint128[] memory balances,
+            bool[] memory claimable
+        )
+    {
         uint currentSnapId = lynx.currentSnapId();
-        ids = new uint[](currentSnapId);
+        qualfierIndexes = new uint[](currentSnapId);
+        balances = new uint128[](currentSnapId);
         claimable = new bool[](currentSnapId);
         for (uint i = 0; i < currentSnapId; i++) {
             uint qualifyIndex = getIndexOfUser(i, user);
-            ids[i] = qualifyIndex;
+            qualfierIndexes[i] = qualifyIndex;
+            verificationIndexes[i] = getIndexOfUser(i + 1, user);
             claimable[i] = !claimed[user][i];
+            if (qualifyIndex == type(uint).max) continue;
+            balances[i] = snapshots[i].balances[qualifyIndex];
         }
     }
 
