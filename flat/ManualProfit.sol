@@ -334,6 +334,7 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
         tier2 = 40;
         totalTiers = 100;
         transferOwnership(_newOwner);
+        excluded[address(0)] = true;
     }
 
     //------------------------
@@ -528,6 +529,7 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
      * @param _user User to set
      */
     function _excludeUser(address _user) private {
+        if (_user == address(0)) revert LynxPS__ExcludedClaimer();
         excluded[_user] = true;
     }
 
