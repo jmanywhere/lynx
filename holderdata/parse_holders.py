@@ -43,7 +43,9 @@ with open("./holders0.csv", "r") as etherscan_export:
     with open("./excludedAddresses.json", "r") as excluded_addresses:
         excluded = json.load(excluded_addresses)
         excluded = excluded["exclusions"]
-        for row in reader:
+        for index,row in enumerate(reader):
+            if(index == 0):
+                continue
             # Filter balances
             balanceString = float(row[1].replace(",", ""))
             balance = web3.Web3.toWei(balanceString, "ether")
