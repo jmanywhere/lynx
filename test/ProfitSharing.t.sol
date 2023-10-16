@@ -449,4 +449,21 @@ contract ProfitSharingTest is Test {
         vm.expectRevert(LynxPS__AlreadyClaimedOrInvalidSnapshotClaim.selector);
         profitSharing.claimDivs(ids, qualifyingIndex, verificationIndex);
     }
+
+    function test_excluded_no_claim() public limitedDump {
+        uint[] memory ids = new uint[](1);
+        uint[] memory qualifyingIndex = new uint[](1);
+        uint[] memory verificationIndex = new uint[](1);
+        ids[0] = 0;
+        qualifyingIndex[0] = 0;
+        verificationIndex[0] = 0;
+
+        vm.prank(address(0));
+        vm.expectRevert(LynxPS__ExcludedClaimer.selector);
+        profitSharing.claimDivs(ids, qualifyingIndex, verificationIndex);
+
+        vm.prank(owner);
+        vm.expectRevert(LynxPS__ExcludedClaimer.selector);
+        profitSharing.excludeUser(address(0));
+    }
 }

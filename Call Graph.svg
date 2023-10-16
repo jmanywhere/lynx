@@ -1,0 +1,449 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="876pt" height="1335pt" viewBox="0.00 0.00 875.57 1335.00">
+<g id="graph0" class="graph" transform="translate(4,1331) scale(1)" data-name="G">
+
+<polygon fill="#2e3e56" stroke="none" points="-4,4 -4,-1331 871.57,-1331 871.57,4 -4,4" style=""/>
+<g id="clust1" class="cluster" data-name="clusterLynxManualProfitDistribution">
+
+<path fill="#445773" stroke="#445773" d="M20,-201C20,-201 847.57,-201 847.57,-201 853.57,-201 859.57,-207 859.57,-213 859.57,-213 859.57,-1170 859.57,-1170 859.57,-1176 853.57,-1182 847.57,-1182 847.57,-1182 20,-1182 20,-1182 14,-1182 8,-1176 8,-1170 8,-1170 8,-213 8,-213 8,-207 14,-201 20,-201" style=""/>
+<text text-anchor="middle" x="433.79" y="-1165.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">LynxManualProfitDistribution</text>
+</g>
+<g id="clust2" class="cluster" data-name="clusterILynx">
+
+<path fill="#3b4b63" stroke="#e8726d" stroke-dasharray="5,2" d="M486.31,-8C486.31,-8 609.79,-8 609.79,-8 615.79,-8 621.79,-14 621.79,-20 621.79,-20 621.79,-181 621.79,-181 621.79,-187 615.79,-193 609.79,-193 609.79,-193 486.31,-193 486.31,-193 480.31,-193 474.31,-187 474.31,-181 474.31,-181 474.31,-20 474.31,-20 474.31,-14 480.31,-8 486.31,-8" style=""/>
+<text text-anchor="middle" x="548.05" y="-176.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">ILynx</text>
+</g>
+<g id="clust3" class="cluster" data-name="cluster_01">
+
+<polygon fill="#2e3e56" stroke="black" points="84.92,-1190 84.92,-1319 583.05,-1319 583.05,-1190 84.92,-1190" style=""/>
+<text text-anchor="middle" x="333.99" y="-1302.4" font-family="Times,serif" font-size="14.00" style="">Legend</text>
+</g>
+<!-- LynxManualProfitDistribution.&lt;Constructor&gt; -->
+<g id="node1" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.&lt;Constructor&gt;">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="157.92" cy="-1104" rx="67.55" ry="18" style=""/>
+<text text-anchor="middle" x="157.92" y="-1099.8" font-family="Times,serif" font-size="14.00" style="">&lt;Constructor&gt;</text>
+</g>
+<!-- LynxManualProfitDistribution.ILynx -->
+<g id="node14" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.ILynx">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-1131" rx="34.77" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-1126.8" font-family="Times,serif" font-size="14.00" style="">ILynx</text>
+</g>
+<!-- LynxManualProfitDistribution.&lt;Constructor&gt;&#45;&gt;LynxManualProfitDistribution.ILynx -->
+<g id="edge1" class="edge" data-name="LynxManualProfitDistribution.&lt;Constructor&gt;-&gt;LynxManualProfitDistribution.ILynx">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M224.76,-1108.58C302.62,-1114 430.33,-1122.88 499.29,-1127.68" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="499.03,-1131.17 509.24,-1128.37 499.51,-1124.18 499.03,-1131.17" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.transferOwnership -->
+<g id="node15" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.transferOwnership">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-1077" rx="82.81" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-1072.8" font-family="Times,serif" font-size="14.00" style="">transferOwnership</text>
+</g>
+<!-- LynxManualProfitDistribution.&lt;Constructor&gt;&#45;&gt;LynxManualProfitDistribution.transferOwnership -->
+<g id="edge2" class="edge" data-name="LynxManualProfitDistribution.&lt;Constructor&gt;-&gt;LynxManualProfitDistribution.transferOwnership">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M224.76,-1099.42C287.88,-1095.03 383.75,-1088.36 454.53,-1083.44" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="454.69,-1086.93 464.42,-1082.75 454.21,-1079.95 454.69,-1086.93" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.createSnapshot -->
+<g id="node2" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.createSnapshot">
+
+<ellipse fill="#ffbdb9" stroke="brown" stroke-width="3" cx="157.92" cy="-227" rx="69.48" ry="18" style=""/>
+<text text-anchor="middle" x="157.92" y="-222.8" font-family="Times,serif" font-size="14.00" style="">createSnapshot</text>
+</g>
+<!-- LynxManualProfitDistribution.LynxPS__InvalidMsgValue -->
+<g id="node16" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.LynxPS__InvalidMsgValue">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-227" rx="119.31" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-222.8" font-family="Times,serif" font-size="14.00" style="">LynxPS__InvalidMsgValue</text>
+</g>
+<!-- LynxManualProfitDistribution.createSnapshot&#45;&gt;LynxManualProfitDistribution.LynxPS__InvalidMsgValue -->
+<g id="edge3" class="edge" data-name="LynxManualProfitDistribution.createSnapshot-&gt;LynxManualProfitDistribution.LynxPS__InvalidMsgValue">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M228.76,-227C280.42,-227 352.34,-227 414.74,-227" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="414.47,-230.5 424.47,-227 414.47,-223.5 414.47,-230.5" style=""/>
+</g>
+<!-- ILynx.currentSnapId -->
+<g id="node28" class="node" pointer-events="visible" data-name="ILynx.currentSnapId">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-142" rx="65.98" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-137.8" font-family="Times,serif" font-size="14.00" style="">currentSnapId</text>
+</g>
+<!-- LynxManualProfitDistribution.createSnapshot&#45;&gt;ILynx.currentSnapId -->
+<g id="edge4" class="edge" data-name="LynxManualProfitDistribution.createSnapshot-&gt;ILynx.currentSnapId">
+
+<path fill="none" stroke="white" stroke-width="2" d="M213.71,-215C284.13,-199.58 406.26,-172.83 481.53,-156.35" style=""/>
+<polygon fill="white" stroke="white" stroke-width="2" points="482.12,-159.8 491.14,-154.24 480.62,-152.96 482.12,-159.8" style=""/>
+</g>
+<!-- ILynx.takeSnapshot -->
+<g id="node29" class="node" pointer-events="visible" data-name="ILynx.takeSnapshot">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-34" rx="62.56" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-29.8" font-family="Times,serif" font-size="14.00" style="">takeSnapshot</text>
+</g>
+<!-- LynxManualProfitDistribution.createSnapshot&#45;&gt;ILynx.takeSnapshot -->
+<g id="edge5" class="edge" data-name="LynxManualProfitDistribution.createSnapshot-&gt;ILynx.takeSnapshot">
+
+<path fill="none" stroke="white" stroke-width="2" d="M172.43,-208.08C199.1,-172.4 262.31,-95.65 335.85,-61 378.03,-41.12 429.93,-34.28 471.72,-32.45" style=""/>
+<polygon fill="white" stroke="white" stroke-width="2" points="471.72,-35.95 481.6,-32.13 471.49,-28.96 471.72,-35.95" style=""/>
+</g>
+<!-- ILynx.snapshots -->
+<g id="node30" class="node" pointer-events="visible" data-name="ILynx.snapshots">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-88" rx="48.69" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-83.8" font-family="Times,serif" font-size="14.00" style="">snapshots</text>
+</g>
+<!-- LynxManualProfitDistribution.createSnapshot&#45;&gt;ILynx.snapshots -->
+<g id="edge6" class="edge" data-name="LynxManualProfitDistribution.createSnapshot-&gt;ILynx.snapshots">
+
+<path fill="none" stroke="white" stroke-width="2" d="M180.7,-208.68C212.52,-183.02 274.63,-137.05 335.85,-115 384.23,-97.57 442.39,-91.11 485.42,-88.85" style=""/>
+<polygon fill="white" stroke="white" stroke-width="2" points="485.4,-92.35 495.24,-88.41 485.09,-85.36 485.4,-92.35" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs -->
+<g id="node3" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.claimDivs">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="157.92" cy="-780" rx="50.96" ry="18" style=""/>
+<text text-anchor="middle" x="157.92" y="-775.8" font-family="Times,serif" font-size="14.00" style="">claimDivs</text>
+</g>
+<!-- LynxManualProfitDistribution.calculateReward -->
+<g id="node9" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.calculateReward">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-807" rx="75.25" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-802.8" font-family="Times,serif" font-size="14.00" style="">calculateReward</text>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.calculateReward -->
+<g id="edge16" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.calculateReward">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M209.27,-783.5C273.19,-787.95 384.44,-795.69 461.73,-801.06" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="461.06,-804.53 471.28,-801.73 461.55,-797.54 461.06,-804.53" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getTierOfBalance -->
+<g id="node13" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.getTierOfBalance">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-861" rx="80.41" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-856.8" font-family="Times,serif" font-size="14.00" style="">getTierOfBalance</text>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.getTierOfBalance -->
+<g id="edge12" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.getTierOfBalance">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M204.56,-788.88C239.96,-799.3 290.48,-815.25 335.85,-825 381.01,-834.71 432.42,-841.37 473.2,-846.7" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="472.68,-850.16 483.05,-847.99 473.59,-843.22 472.68,-850.16" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.getTierOfBalance -->
+<g id="edge14" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.getTierOfBalance">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M186.43,-796.28C220.9,-811.13 282,-831.43 335.85,-843 374,-851.2 416.59,-857.23 453.48,-860.85" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="452.98,-864.32 463.26,-861.75 453.62,-857.35 452.98,-864.32" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.LynxPS__ExcludedClaimer -->
+<g id="node17" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.LynxPS__ExcludedClaimer">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-915" rx="119.29" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-910.8" font-family="Times,serif" font-size="14.00" style="">LynxPS__ExcludedClaimer</text>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.LynxPS__ExcludedClaimer -->
+<g id="edge7" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.LynxPS__ExcludedClaimer">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M180.55,-797.44C212.44,-822.12 274.9,-866.6 335.85,-888 362.39,-897.32 391.81,-903.48 420.06,-907.54" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="419.56,-911.01 429.94,-908.86 420.49,-904.07 419.56,-911.01" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.LynxPS__InvalidIndexesLength -->
+<g id="node18" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.LynxPS__InvalidIndexesLength">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-969" rx="136.62" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-964.8" font-family="Times,serif" font-size="14.00" style="">LynxPS__InvalidIndexesLength</text>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.LynxPS__InvalidIndexesLength -->
+<g id="edge9" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.LynxPS__InvalidIndexesLength">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M172.55,-798.46C199.4,-833.28 262.93,-908.18 335.85,-942 356.15,-951.42 378.66,-957.89 401.2,-962.28" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="400.27,-965.67 410.73,-963.98 401.5,-958.78 400.27,-965.67" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.LynxPS__AlreadyClaimedOrInvalidSnapshotClaim -->
+<g id="node19" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.LynxPS__AlreadyClaimedOrInvalidSnapshotClaim">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-1023" rx="212.4" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-1018.8" font-family="Times,serif" font-size="14.00" style="">LynxPS__AlreadyClaimedOrInvalidSnapshotClaim</text>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.LynxPS__AlreadyClaimedOrInvalidSnapshotClaim -->
+<g id="edge10" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.LynxPS__AlreadyClaimedOrInvalidSnapshotClaim">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M168.11,-799.09C190.16,-842.56 250.62,-948.79 335.85,-996 343.91,-1000.46 352.4,-1004.31 361.16,-1007.63" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="359.81,-1010.86 370.4,-1010.83 362.1,-1004.25 359.81,-1010.86" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.LynxPS__InvalidClaimer -->
+<g id="node20" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.LynxPS__InvalidClaimer">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-699" rx="110.06" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-694.8" font-family="Times,serif" font-size="14.00" style="">LynxPS__InvalidClaimer</text>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.LynxPS__InvalidClaimer -->
+<g id="edge11" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.LynxPS__InvalidClaimer">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M196.06,-766.65C231.53,-754.39 286.71,-736.56 335.85,-726 368.23,-719.04 403.82,-713.64 436.4,-709.57" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="436.69,-713.06 446.2,-708.38 435.85,-706.11 436.69,-713.06" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.LynxPS__VerificationTierFailure -->
+<g id="node21" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.LynxPS__VerificationTierFailure">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-753" rx="141.82" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-748.8" font-family="Times,serif" font-size="14.00" style="">LynxPS__VerificationTierFailure</text>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.LynxPS__VerificationTierFailure -->
+<g id="edge13" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.LynxPS__VerificationTierFailure">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M205.74,-772.16C252.43,-767.1 326.71,-761.26 394.06,-757.03" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="394.21,-760.53 403.97,-756.42 393.77,-753.54 394.21,-760.53" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.LynxPS__VerificationTierFailure -->
+<g id="edge15" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.LynxPS__VerificationTierFailure">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M210.06,-781.19C265.91,-779.31 357.19,-773.46 430.67,-767.34" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="430.55,-770.86 440.22,-766.53 429.96,-763.89 430.55,-770.86" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.payable -->
+<g id="node22" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.payable">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-591" rx="41.13" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-586.8" font-family="Times,serif" font-size="14.00" style="">payable</text>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.payable -->
+<g id="edge17" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.payable">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M172.55,-761.54C199.4,-726.72 262.93,-651.82 335.85,-618 385.64,-594.9 448.73,-589.52 492.94,-589.07" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="492.7,-592.57 502.7,-589.07 492.7,-585.57 492.7,-592.57" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.LynxPS__ETHTransferFailed -->
+<g id="node23" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.LynxPS__ETHTransferFailed">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-645" rx="127.37" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-640.8" font-family="Times,serif" font-size="14.00" style="">LynxPS__ETHTransferFailed</text>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;LynxManualProfitDistribution.LynxPS__ETHTransferFailed -->
+<g id="edge18" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;LynxManualProfitDistribution.LynxPS__ETHTransferFailed">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M180.55,-762.56C212.44,-737.88 274.9,-693.4 335.85,-672 360.5,-663.35 387.64,-657.41 414.02,-653.36" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="414.49,-656.82 423.89,-651.94 413.5,-649.9 414.49,-656.82" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.claimDivs&#45;&gt;ILynx.currentSnapId -->
+<g id="edge8" class="edge" data-name="LynxManualProfitDistribution.claimDivs-&gt;ILynx.currentSnapId">
+
+<path fill="none" stroke="white" stroke-width="2" d="M181.08,-762.65C213.65,-735.69 273.46,-680.3 299.85,-618 336.47,-531.54 275.31,-268.78 335.85,-197 367.82,-159.09 422.31,-145.57 467.93,-141.41" style=""/>
+<polygon fill="white" stroke="white" stroke-width="2" points="468.11,-144.9 477.83,-140.67 467.6,-137.92 468.11,-144.9" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.excludeUser -->
+<g id="node4" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.excludeUser">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="157.92" cy="-591" rx="59.1" ry="18" style=""/>
+<text text-anchor="middle" x="157.92" y="-586.8" font-family="Times,serif" font-size="14.00" style="">excludeUser</text>
+</g>
+<!-- LynxManualProfitDistribution._excludeUser -->
+<g id="node8" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution._excludeUser">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-537" rx="64.25" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-532.8" font-family="Times,serif" font-size="14.00" style="">_excludeUser</text>
+</g>
+<!-- LynxManualProfitDistribution.excludeUser&#45;&gt;LynxManualProfitDistribution._excludeUser -->
+<g id="edge19" class="edge" data-name="LynxManualProfitDistribution.excludeUser-&gt;LynxManualProfitDistribution._excludeUser">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M212.3,-582.51C247.38,-577.01 294.31,-569.82 335.85,-564 381.93,-557.54 433.76,-550.9 474.54,-545.83" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="474.87,-549.31 484.36,-544.61 474.01,-542.37 474.87,-549.31" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.excludeMultipleUsers -->
+<g id="node5" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.excludeMultipleUsers">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="157.92" cy="-537" rx="96.14" ry="18" style=""/>
+<text text-anchor="middle" x="157.92" y="-532.8" font-family="Times,serif" font-size="14.00" style="">excludeMultipleUsers</text>
+</g>
+<!-- LynxManualProfitDistribution.excludeMultipleUsers&#45;&gt;LynxManualProfitDistribution._excludeUser -->
+<g id="edge20" class="edge" data-name="LynxManualProfitDistribution.excludeMultipleUsers-&gt;LynxManualProfitDistribution._excludeUser">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M255.36,-537C321.49,-537 408.07,-537 469.68,-537" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="469.41,-540.5 479.41,-537 469.41,-533.5 469.41,-540.5" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.removeUnclaimedRewards -->
+<g id="node6" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.removeUnclaimedRewards">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="157.92" cy="-483" rx="116.3" ry="18" style=""/>
+<text text-anchor="middle" x="157.92" y="-478.8" font-family="Times,serif" font-size="14.00" style="">removeUnclaimedRewards</text>
+</g>
+<!-- LynxManualProfitDistribution.removeUnclaimedRewards&#45;&gt;LynxManualProfitDistribution.payable -->
+<g id="edge23" class="edge" data-name="LynxManualProfitDistribution.removeUnclaimedRewards-&gt;LynxManualProfitDistribution.payable">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M260.92,-492.45C274.71,-496.55 288.12,-502.22 299.85,-510 323.88,-525.95 311.33,-548.8 335.85,-564 383.46,-593.52 448.71,-597.55 494.03,-595.93" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="494,-599.43 503.81,-595.45 493.65,-592.44 494,-599.43" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.removeUnclaimedRewards&#45;&gt;LynxManualProfitDistribution.LynxPS__ETHTransferFailed -->
+<g id="edge25" class="edge" data-name="LynxManualProfitDistribution.removeUnclaimedRewards-&gt;LynxManualProfitDistribution.LynxPS__ETHTransferFailed">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M265.85,-490.73C278.28,-495.17 290.01,-501.38 299.85,-510 337.91,-543.33 296.76,-585.87 335.85,-618 358.36,-636.51 387.03,-646.18 415.94,-650.7" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="415.4,-654.15 425.77,-651.98 416.31,-647.21 415.4,-654.15" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.LynxPS__InvalidReclaim -->
+<g id="node24" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.LynxPS__InvalidReclaim">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-483" rx="111.2" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-478.8" font-family="Times,serif" font-size="14.00" style="">LynxPS__InvalidReclaim</text>
+</g>
+<!-- LynxManualProfitDistribution.removeUnclaimedRewards&#45;&gt;LynxManualProfitDistribution.LynxPS__InvalidReclaim -->
+<g id="edge22" class="edge" data-name="LynxManualProfitDistribution.removeUnclaimedRewards-&gt;LynxManualProfitDistribution.LynxPS__InvalidReclaim">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M275.64,-483C322.06,-483 375.54,-483 422.69,-483" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="422.46,-486.5 432.46,-483 422.46,-479.5 422.46,-486.5" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.owner -->
+<g id="node25" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.owner">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-429" rx="35.34" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-424.8" font-family="Times,serif" font-size="14.00" style="">owner</text>
+</g>
+<!-- LynxManualProfitDistribution.removeUnclaimedRewards&#45;&gt;LynxManualProfitDistribution.owner -->
+<g id="edge24" class="edge" data-name="LynxManualProfitDistribution.removeUnclaimedRewards-&gt;LynxManualProfitDistribution.owner">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M243.46,-469.67C272.7,-465.18 305.69,-460.23 335.85,-456 391.96,-448.13 456.59,-440.01 499.43,-434.75" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="499.75,-438.24 509.25,-433.55 498.9,-431.29 499.75,-438.24" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.removeUnclaimedRewards&#45;&gt;ILynx.snapshots -->
+<g id="edge21" class="edge" data-name="LynxManualProfitDistribution.removeUnclaimedRewards-&gt;ILynx.snapshots">
+
+<path fill="none" stroke="white" stroke-width="2" d="M224.63,-467.04C252.17,-456.97 281.91,-440.97 299.85,-416 378.46,-306.58 240.97,-210.66 335.85,-115 375.43,-75.09 442.51,-73.07 490.45,-78" style=""/>
+<polygon fill="white" stroke="white" stroke-width="2" points="489.77,-81.45 500.11,-79.15 490.59,-74.5 489.77,-81.45" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.setTierDistribution -->
+<g id="node7" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.setTierDistribution">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="157.92" cy="-389" rx="84.55" ry="18" style=""/>
+<text text-anchor="middle" x="157.92" y="-384.8" font-family="Times,serif" font-size="14.00" style="">setTierDistribution</text>
+</g>
+<!-- LynxManualProfitDistribution.LynxPS__InvalidTierDistribution -->
+<g id="node26" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.LynxPS__InvalidTierDistribution">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="548.05" cy="-375" rx="141.87" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-370.8" font-family="Times,serif" font-size="14.00" style="">LynxPS__InvalidTierDistribution</text>
+</g>
+<!-- LynxManualProfitDistribution.setTierDistribution&#45;&gt;LynxManualProfitDistribution.LynxPS__InvalidTierDistribution -->
+<g id="edge26" class="edge" data-name="LynxManualProfitDistribution.setTierDistribution-&gt;LynxManualProfitDistribution.LynxPS__InvalidTierDistribution">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M242.66,-385.98C287.65,-384.36 344.47,-382.31 396.81,-380.42" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="396.76,-383.92 406.63,-380.07 396.51,-376.93 396.76,-383.92" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getIndexOfUser -->
+<g id="node10" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.getIndexOfUser">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="548.05" cy="-301" rx="73.49" ry="18" style=""/>
+<text text-anchor="middle" x="548.05" y="-296.8" font-family="Times,serif" font-size="14.00" style="">getIndexOfUser</text>
+</g>
+<!-- LynxManualProfitDistribution.type -->
+<g id="node27" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.type">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="823.91" cy="-319" rx="27.83" ry="18" style=""/>
+<text text-anchor="middle" x="823.91" y="-314.8" font-family="Times,serif" font-size="14.00" style="">type</text>
+</g>
+<!-- LynxManualProfitDistribution.getIndexOfUser&#45;&gt;LynxManualProfitDistribution.type -->
+<g id="edge27" class="edge" data-name="LynxManualProfitDistribution.getIndexOfUser-&gt;LynxManualProfitDistribution.type">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M620.65,-305.71C671.98,-309.08 739.33,-313.51 781.87,-316.3" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="781.53,-319.79 791.74,-316.95 781.99,-312.8 781.53,-319.79" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getIndexesOfUser -->
+<g id="node11" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.getIndexesOfUser">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="157.92" cy="-335" rx="81.08" ry="18" style=""/>
+<text text-anchor="middle" x="157.92" y="-330.8" font-family="Times,serif" font-size="14.00" style="">getIndexesOfUser</text>
+</g>
+<!-- LynxManualProfitDistribution.getIndexesOfUser&#45;&gt;LynxManualProfitDistribution.getIndexOfUser -->
+<g id="edge31" class="edge" data-name="LynxManualProfitDistribution.getIndexesOfUser-&gt;LynxManualProfitDistribution.getIndexOfUser">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M225.64,-323.91C290.53,-316.4 389.42,-307.57 460.36,-302.86" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="460.5,-306.36 470.25,-302.23 460.05,-299.38 460.5,-306.36" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getIndexesOfUser&#45;&gt;LynxManualProfitDistribution.getIndexOfUser -->
+<g id="edge32" class="edge" data-name="LynxManualProfitDistribution.getIndexesOfUser-&gt;LynxManualProfitDistribution.getIndexOfUser">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M239.82,-333.52C308.23,-329.1 405.5,-320.53 472.16,-313.02" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="472.53,-316.5 482.06,-311.88 471.73,-309.55 472.53,-316.5" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getIndexesOfUser&#45;&gt;LynxManualProfitDistribution.type -->
+<g id="edge29" class="edge" data-name="LynxManualProfitDistribution.getIndexesOfUser-&gt;LynxManualProfitDistribution.type">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M238.83,-331.47C354.17,-331.09 573.92,-333.4 760.25,-319 767.44,-318.44 775.06,-317.58 782.42,-316.76" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="782.65,-320.25 792.23,-315.71 781.91,-313.29 782.65,-320.25" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getIndexesOfUser&#45;&gt;LynxManualProfitDistribution.type -->
+<g id="edge30" class="edge" data-name="LynxManualProfitDistribution.getIndexesOfUser-&gt;LynxManualProfitDistribution.type">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M233.12,-343.02C346.79,-349 570.8,-351.64 760.25,-337 769.38,-336.29 779.2,-335.09 788.3,-333.49" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="788.91,-336.94 797.99,-331.47 787.48,-330.08 788.91,-336.94" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getIndexesOfUser&#45;&gt;ILynx.currentSnapId -->
+<g id="edge28" class="edge" data-name="LynxManualProfitDistribution.getIndexesOfUser-&gt;ILynx.currentSnapId">
+
+<path fill="none" stroke="white" stroke-width="2" d="M240.11,-334.12C261.63,-330.23 283.41,-322.51 299.85,-308 338.73,-273.68 298.11,-232.58 335.85,-197 371.23,-163.64 424.21,-149.91 468.26,-144.51" style=""/>
+<polygon fill="white" stroke="white" stroke-width="2" points="468.43,-148.01 478,-143.46 467.69,-141.05 468.43,-148.01" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getAllUserParticipatingSnapshots -->
+<g id="node12" class="node" pointer-events="visible" data-name="LynxManualProfitDistribution.getAllUserParticipatingSnapshots">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="157.92" cy="-281" rx="141.85" ry="18" style=""/>
+<text text-anchor="middle" x="157.92" y="-276.8" font-family="Times,serif" font-size="14.00" style="">getAllUserParticipatingSnapshots</text>
+</g>
+<!-- LynxManualProfitDistribution.getAllUserParticipatingSnapshots&#45;&gt;LynxManualProfitDistribution.getIndexOfUser -->
+<g id="edge34" class="edge" data-name="LynxManualProfitDistribution.getAllUserParticipatingSnapshots-&gt;LynxManualProfitDistribution.getIndexOfUser">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M300.97,-281.79C357.38,-284.21 420.12,-287.76 468.13,-291.38" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="467.69,-294.85 477.93,-292.14 468.23,-287.87 467.69,-294.85" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getAllUserParticipatingSnapshots&#45;&gt;LynxManualProfitDistribution.getIndexOfUser -->
+<g id="edge35" class="edge" data-name="LynxManualProfitDistribution.getAllUserParticipatingSnapshots-&gt;LynxManualProfitDistribution.getIndexOfUser">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M270.93,-292.95C331.38,-296.96 404.85,-300.59 460.8,-302.28" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="460.42,-305.77 470.52,-302.55 460.62,-298.77 460.42,-305.77" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getAllUserParticipatingSnapshots&#45;&gt;LynxManualProfitDistribution.type -->
+<g id="edge36" class="edge" data-name="LynxManualProfitDistribution.getAllUserParticipatingSnapshots-&gt;LynxManualProfitDistribution.type">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M294.14,-275.1C308.22,-274.65 322.32,-274.27 335.85,-274 430.14,-272.14 670.47,-245.1 760.25,-274 773.64,-278.31 786.58,-286.65 797.2,-295" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="794.74,-297.5 804.65,-301.25 799.24,-292.14 794.74,-297.5" style=""/>
+</g>
+<!-- LynxManualProfitDistribution.getAllUserParticipatingSnapshots&#45;&gt;ILynx.currentSnapId -->
+<g id="edge33" class="edge" data-name="LynxManualProfitDistribution.getAllUserParticipatingSnapshots-&gt;ILynx.currentSnapId">
+
+<path fill="none" stroke="white" stroke-width="2" d="M269.8,-268.95C280.46,-265.13 290.69,-260.24 299.85,-254 324.6,-237.12 311.66,-214.68 335.85,-197 374.74,-168.57 427.1,-154.82 469.96,-148.17" style=""/>
+<polygon fill="white" stroke="white" stroke-width="2" points="470.23,-151.67 479.64,-146.79 469.24,-144.74 470.23,-151.67" style=""/>
+</g>
+<!-- key -->
+<g id="node31" class="node" pointer-events="visible" data-name="key">
+
+<polygon fill="#edad56" stroke="none" stroke-width="3" points="222.92,-1286 92.92,-1286 92.92,-1198 222.92,-1198 222.92,-1286" style=""/>
+<text text-anchor="start" x="142.56" y="-1267.4" font-family="Times,serif" font-size="14.00" style="">Internal Call</text>
+<text text-anchor="start" x="138.67" y="-1247.4" font-family="Times,serif" font-size="14.00" style="">External Call</text>
+<text text-anchor="start" x="116.13" y="-1227.4" font-family="Times,serif" font-size="14.00" style="">Defined Contract</text>
+<text text-anchor="start" x="102.53" y="-1207.4" font-family="Times,serif" font-size="14.00" style="">Undefined Contract</text>
+</g>
+<!-- key2 -->
+<g id="node32" class="node" pointer-events="visible" data-name="key2">
+
+<polygon fill="#edad56" stroke="none" stroke-width="3" points="575.05,-1286 521.05,-1286 521.05,-1198 575.05,-1198 575.05,-1286" style=""/>
+<text text-anchor="start" x="538.05" y="-1267.4" font-family="Times,serif" font-size="14.00" style="">   </text>
+<text text-anchor="start" x="538.05" y="-1247.4" font-family="Times,serif" font-size="14.00" style="">   </text>
+<polygon fill="#445773" stroke="none" points="536.05,-1222 536.05,-1242 561.05,-1242 561.05,-1222 536.05,-1222" style=""/>
+<text text-anchor="start" x="538.05" y="-1227.4" font-family="Times,serif" font-size="14.00" style="">   </text>
+<polygon fill="none" stroke="#e8726d" points="538.05,-1204 538.05,-1220 559.05,-1220 559.05,-1204 538.05,-1204" style=""/>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge37" class="edge" data-name="key-&gt;key2">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M215.92,-1272C353.32,-1272 390.9,-1272 522.06,-1272" style=""/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="522.02,-1275.5 532.02,-1272 522.02,-1268.5 522.02,-1275.5" style=""/>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge38" class="edge" data-name="key-&gt;key2">
+
+<path fill="none" stroke="white" stroke-width="2" d="M215.92,-1252C353.32,-1252 390.9,-1252 522.06,-1252" style=""/>
+<polygon fill="white" stroke="white" stroke-width="2" points="522.02,-1255.5 532.02,-1252 522.02,-1248.5 522.02,-1255.5" style=""/>
+</g>
+</g>
+</svg>
