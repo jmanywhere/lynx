@@ -42,6 +42,7 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
     uint128 public tier1;
     uint128 public tier2;
     uint128 public totalTiers;
+    uint256 public snapshotOffset;
     uint private constant TIER1 = 50_000 ether;
     uint private constant TIER2 = 1_000 ether;
     uint128 private constant MAGNIFIER = 1 ether;
@@ -158,25 +159,26 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
 
             // Verify initial Tier
             uint8 initialTier = getTierOfBalance(qualifyBalance);
-            if (initialTier == 0)
-                revert LynxPS__VerificationTierFailure(
-                    qualifyId,
-                    initialTier,
-                    0
-                );
             uint8 verifyTier = getTierOfBalance(verifyBalance);
-            // Check balances remained in same tier
-            if (initialTier != verifyTier)
+            if (initialTier == 0 || verifyTier == 0)
                 revert LynxPS__VerificationTierFailure(
                     qualifyId,
                     initialTier,
                     verifyTier
                 );
-            totalReward += calculateReward(
-                qualifyId,
-                qualifyBalance,
-                initialTier
-            );
+            uint128 minBalance = uint128(min(qualifyBalance, verifyBalance));
+            if (verifyTier == 1) {
+                totalReward += calculateReward(
+                    qualifyId,
+                    minBalance,
+                    verifyTier
+                );
+            } else
+                totalReward += calculateReward(
+                    qualifyId,
+                    qualifyBalance,
+                    initialTier
+                );
         }
 
         totalReward /= MAGNIFIER;
@@ -253,6 +255,10 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
 
         if (totalTiers == 0) revert LynxPS__InvalidTierDistribution();
         emit TierDistributionChanged(tier1, tier2);
+    }
+
+    function setSnapshotOffset(uint _offset) external onlyOwner {
+        snapshotOffset = _offset;
     }
 
     //------------------------
@@ -374,9 +380,10 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
     {
         uint currentSnapId = lynx.currentSnapId();
         qualfierIndexes = new uint[](currentSnapId);
+        verificationIndexes = new uint[](currentSnapId);
         balances = new uint128[](currentSnapId);
         claimable = new bool[](currentSnapId);
-        for (uint i = 0; i < currentSnapId; i++) {
+        for (uint i = snapshotOffset; i < currentSnapId; i++) {
             uint qualifyIndex = getIndexOfUser(i, user);
             qualfierIndexes[i] = qualifyIndex;
             verificationIndexes[i] = getIndexOfUser(i + 1, user);
@@ -399,5 +406,10 @@ contract LynxManualProfitDistribution is Ownable, ReentrancyGuard {
         if (amount >= TIER1) return 1;
         if (amount >= TIER2) return 2;
         return 0;
+    }
+
+    function min(uint a, uint b) private pure returns (uint) {
+        if (a < b) return a;
+        return b;
     }
 }
