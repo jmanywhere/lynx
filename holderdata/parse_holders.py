@@ -32,7 +32,7 @@ args = parser.parse_args()
 
 filter_amount = web3.Web3.toWei(args.filterAmount, "ether")
 
-with open("./holders0.csv", "r") as etherscan_export:
+with open("./Lynx-Snapshot-0.csv", "r") as etherscan_export:
     reader = csv.reader(etherscan_export)
     
     holders = []
@@ -59,7 +59,7 @@ with open("./holders0.csv", "r") as etherscan_export:
             exclusionIndex = find_index_by_property(excluded, "address", address)
             if exclusionIndex == -1:
                 holders.append(address)
-                balances.append(balance)
+                balances.append(str(balance))
             # IF excluded and not excluded in token, then add to tier offset
             elif not(excluded[exclusionIndex]["excludedInToken"]):
                 if(balance >= web3.Web3.toWei(50_000, "ether")):
@@ -67,7 +67,7 @@ with open("./holders0.csv", "r") as etherscan_export:
                 elif(balance >= web3.Web3.toWei(1_000, "ether")):
                     offset_tier2 += balance
 
-    with open(output_directory + "/holders0.json", "w") as holders_json:
+    with open(output_directory + "/snapshot0.json", "w") as holders_json:
         obj = {
             "input": {
                 "holders": holders,
