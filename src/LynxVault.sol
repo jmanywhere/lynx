@@ -8,6 +8,7 @@ import "openzeppelin/token/ERC20/IERC20.sol";
 error LynxVault__NotWhitelisted();
 error LynxVault__NotOwner();
 error LynxVault__ProperChannels();
+error LynxVault__InvalidAddress();
 
 /**
  * @title Vault for Lynx
@@ -66,6 +67,7 @@ contract LynxVault {
         address _address,
         bool status
     ) external onlyOwner {
+        if (_address == address(0)) revert LynxVault__InvalidAddress();
         whitelisted[_address] = status;
         emit SetWhitelist(_address, status);
     }
@@ -80,6 +82,7 @@ contract LynxVault {
         bool status
     ) external onlyOwner {
         for (uint i = 0; i < _addresses.length; i++) {
+            if (_addresses[i] == address(0)) revert LynxVault__InvalidAddress();
             whitelisted[_addresses[i]] = status;
             emit SetWhitelist(_addresses[i], status);
         }
@@ -94,6 +97,7 @@ contract LynxVault {
         address _address,
         uint amount
     ) external onlyWhitelisted {
+        if (_address == address(0)) revert LynxVault__InvalidAddress();
         lynx.transfer(_address, amount);
         emit Withdraw(_address, amount);
     }

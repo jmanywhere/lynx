@@ -31,7 +31,9 @@ contract Test_Staking is Test {
         staking = new LynxStaking(
             block.timestamp,
             address(lynx),
-            address(vault)
+            address(vault),
+            17_99,
+            2
         );
         currentTime = staking.LockStart();
         lynx.transfer(address(vault), INIT_VAULT);
@@ -51,13 +53,13 @@ contract Test_Staking is Test {
     }
 
     function test_calculate_end_time() public {
-        uint endStakeTime = staking.calculateEndTime(2);
+        uint endStakeTime = staking.calculateEndTime(2 weeks);
         assertEq(endStakeTime, currentTime + 3 weeks);
     }
 
     function test_deposit() public {
         vm.startPrank(user1);
-        staking.deposit(DEPOSIT_AMOUNT, 0);
+        staking.deposit(DEPOSIT_AMOUNT);
 
         (
             uint deposit,
@@ -65,18 +67,18 @@ contract Test_Staking is Test {
             uint end,
             uint pos,
             uint locked,
-            uint8 apr,
             bool set
         ) = staking.stake(user1);
+        (, uint apr, ) = staking.aprConfig();
 
         assertEq(lynx.balanceOf(address(staking)), 0);
         assertEq(lynx.balanceOf(address(vault)), INIT_VAULT + DEPOSIT_AMOUNT);
         assertEq(deposit, DEPOSIT_AMOUNT);
         assertEq(start, block.timestamp);
-        assertEq(end, staking.calculateEndTime(2));
+        assertEq(end, staking.calculateEndTime(2 weeks));
         assertEq(pos, 0);
         assertEq(locked, 0);
-        assertEq(apr, 0);
+        assertEq(apr, 17_99);
         assertTrue(set);
 
         vm.expectRevert(
@@ -88,7 +90,7 @@ contract Test_Staking is Test {
 
     function test_reward_calc() public {
         vm.prank(user2);
-        staking.deposit(DEPOSIT_AMOUNT, 0);
+        staking.deposit(DEPOSIT_AMOUNT);
 
         skip(3 hours);
 
@@ -102,7 +104,7 @@ contract Test_Staking is Test {
 
     function test_withdraw() public {
         vm.prank(user1);
-        staking.deposit(DEPOSIT_AMOUNT, 0);
+        staking.deposit(DEPOSIT_AMOUNT);
 
         skip(3 weeks);
 
@@ -112,7 +114,7 @@ contract Test_Staking is Test {
         uint rewards = staking.currentRewards(user1);
         assertEq(expectedRewards, rewards);
 
-        (, , uint end, , , , ) = staking.stake(user1);
+        (, , uint end, , , ) = staking.stake(user1);
         assertEq(end, block.timestamp);
 
         vm.prank(user1);
@@ -123,22 +125,20 @@ contract Test_Staking is Test {
 
     function test_doubleDeposit() public {
         vm.prank(user3);
-        staking.deposit(DEPOSIT_AMOUNT, 2);
+        staking.deposit(DEPOSIT_AMOUNT);
 
         skip(1 weeks);
 
         uint expectedLock = staking.currentRewards(user3);
         vm.prank(user3);
-        staking.deposit(10 ether, 0);
+        staking.deposit(10 ether);
 
-        (uint dep, , uint nextWithdraw, , uint locked, , ) = staking.stake(
-            user3
-        );
+        (uint dep, , uint nextWithdraw, , uint locked, ) = staking.stake(user3);
         assertEq(lynx.balanceOf(user3), 90 ether);
         assertEq(dep, DEPOSIT_AMOUNT + 10 ether);
         assertEq(locked, expectedLock);
         assertEq(0, staking.currentRewards(user3));
 
-        assertGt(nextWithdraw, block.timestamp + 11 weeks);
+        assertEq(nextWithdraw, block.timestamp + 3 weeks);
     }
 }

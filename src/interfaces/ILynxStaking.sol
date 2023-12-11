@@ -8,23 +8,21 @@ interface ILynxStaking {
         uint256 rewardEnd;
         uint256 posIndex;
         uint256 lockedRewards;
-        uint8 apr_choice;
         bool set;
     }
 
     struct AprConfig {
-        uint256 apr; // This is the APR for the staking - this has to be in the format XX_00 since there are 2 decimals in the APR value;
-        uint16 duration; // This is the duration in weeks of when the staking should end
         bool setup; // This is a flag to indicate if the APR has been set up
+        uint256 apr; // This is the APR for the staking - this has to be in the format XX_00 since there are 2 decimals in the APR value;
+        uint256 duration; // This is the duration in weeks of when the staking should end
     }
 
     /**
      * Deposit tokens in the Staking pool and start earning rewards while the tokens are locked.
      * @param amount The amount of LYNX to deposit
-     * @param apr_choice The APR id selected to
      * @dev if the user is already staked in, claim the current rewards and add the new deposit to the existing one, then relock the tokens for duration.
      */
-    function deposit(uint amount, uint8 apr_choice) external;
+    function deposit(uint amount) external;
 
     /**
      * Withdraw tokens from the Staking pool along with the rewards earned.
