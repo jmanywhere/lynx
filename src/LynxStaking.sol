@@ -85,7 +85,7 @@ contract LynxStaking is ILynxStaking, ReentrancyGuard {
             currentStake.set = true;
             stakers.push(msg.sender);
         }
-
+        totalStaked += amount;
         currentStake.startStake = block.timestamp;
         currentStake.rewardEnd = calculateEndTime(duration);
         // Transfer Deposit amounts to Vault
@@ -103,12 +103,13 @@ contract LynxStaking is ILynxStaking, ReentrancyGuard {
         reward += currentStake.lockedRewards;
         emit ClaimRewards(msg.sender, reward);
         reward += currentStake.depositAmount;
-
+        emit Withdraw(msg.sender, currentStake.depositAmount);
         // remove user from stake list
         address lastIdxUser = stakers[stakers.length - 1];
         stakers[currentStake.posIndex] = lastIdxUser;
         stake[lastIdxUser].posIndex = currentStake.posIndex;
         stakers.pop();
+        totalStaked -= currentStake.depositAmount;
         // reset the user
         stake[msg.sender] = Stake(0, 0, 0, 0, 0, false);
         vault.withdrawTo(msg.sender, reward);

@@ -46,4 +46,5 @@ interface ILynxStaking {
 
     event ClaimRewards(address indexed user, uint256 amount);
     event LockedRewards(address indexed user, uint256 amount);
+    event Withdraw(address indexed user, uint256 amount);
 }
